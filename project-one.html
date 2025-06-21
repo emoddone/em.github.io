@@ -357,139 +357,67 @@
     </style>
 </head>
 <body>
-    <div class="floating-shapes">
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
-    </div>
+  <div class="floating-shapes">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
 
-    <header>
-        <div class="container">
-            <div class="nav-container">
-                <a href="index.html" class="back-link">← Back to Portfolio</a>
-                <div class="project-nav">
-                    <a href="project-one.html" class="active">Project One</a>
-                    <a href="project-two.html">Project Two</a>
-                    <a href="project-three.html">Project Three</a>
-                </div>
-            </div>
+  <header>
+    <div class="container">
+      <div class="nav-container">
+        <a href="index.html" class="back-link">← Back to Portfolio</a>
+        <div class="project-nav">
+          <a href="project-one.html" class="active">Project One</a>
+          <a href="project-two.html">Project Two</a>
+          <a href="project-three.html">Project Three</a>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
 
-    <main>
-        <section class="project-hero">
-            <div class="container">
-                <h1 class="project-title">Project One</h1>
-                <p class="project-subtitle">A comprehensive web application that revolutionizes the way users interact with creative content</p>
-                <div class="project-image">
-                    Project Screenshot/Mockup Goes Here
-                </div>
+  <main>
+    <section class="project-hero">
+      <div class="container">
+        <h1 class="project-title">Ghost Hands VR System</h1>
+        <p class="project-subtitle">An innovative Unity-based VR training system that guides precise hand movements through ghosted visual feedback for medical education</p>
+        <div class="project-image">
+          VR Ghost Hands Demo Video/Screenshot Goes Here
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="full-width-card">
+          <h3 class="section-title">General Components</h3>
+          <div class="features-grid">
+            <div class="feature-item">
+              <h4>Included Features</h4>
+              <ul>
+                <li>Interactable game object acting as step trigger</li>
+                <li>Ghost Handler script that triggers next step and integrates with dialogue/menu</li>
+                <li>Required Time: collider engagement time to advance</li>
+                <li>Haptic Feedback: amplitude and duration on step success</li>
+                <li>Ghost Mechanic Manager: handles step progression (forward/back)</li>
+                <li>Controller Reference: links correct controller to each step</li>
+                <li>Audio feedback via AI-generated voice cues</li>
+                <li>Controller position/rotation tracking exported to CSV</li>
+              </ul>
             </div>
-        </section>
-
-        <section class="content-section">
-            <div class="container">
-                <div class="content-grid">
-                    <div class="content-card">
-                        <h3>Project Overview</h3>
-                        <p>This project tackled the challenge of creating an intuitive platform for creative professionals to showcase their work and connect with potential collaborators. The solution needed to be both visually stunning and highly functional, with seamless user experience across all devices.</p>
-                        <p style="margin-top: 1rem;">The final product exceeded expectations, resulting in a 40% increase in user engagement and positive feedback from the creative community.</p>
-                    </div>
-                    
-                    <div class="content-card">
-                        <h3>My Role</h3>
-                        <ul>
-                            <li><strong>Lead Designer & Developer:</strong> Responsible for the entire design system and front-end implementation</li>
-                            <li><strong>User Experience:</strong> Conducted user research and created wireframes and prototypes</li>
-                            <li><strong>Technical Implementation:</strong> Built responsive components and integrated with backend APIs</li>
-                            <li><strong>Project Management:</strong> Coordinated with stakeholders and managed project timeline</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="full-width-card">
-                    <h3 class="section-title">Key Features</h3>
-                    <div class="features-grid">
-                        <div class="feature-item">
-                            <h4>Responsive Design</h4>
-                            <p>Seamlessly adapts to all screen sizes and devices, ensuring optimal user experience everywhere</p>
-                        </div>
-                        <div class="feature-item">
-                            <h4>Interactive Portfolio</h4>
-                            <p>Dynamic showcase with filtering, search, and detailed project views</p>
-                        </div>
-                        <div class="feature-item">
-                            <h4>User Authentication</h4>
-                            <p>Secure login system with social media integration and user profiles</p>
-                        </div>
-                        <div class="feature-item">
-                            <h4>Real-time Updates</h4>
-                            <p>Live notifications and updates using WebSocket technology</p>
-                        </div>
-                        <div class="feature-item">
-                            <h4>Advanced Search</h4>
-                            <p>Powerful search functionality with filters and tag-based organization</p>
-                        </div>
-                        <div class="feature-item">
-                            <h4>Performance Optimized</h4>
-                            <p>Fast loading times with lazy loading and optimized assets</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="content-grid">
-                    <div class="content-card">
-                        <h3>Technology Stack</h3>
-                        <p>This project leveraged modern web technologies to ensure scalability, performance, and maintainability:</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">WebSocket</span>
-                            <span class="tech-tag">Jest</span>
-                        </div>
-                    </div>
-                    
-                    <div class="content-card">
-                        <h3>Challenges & Solutions</h3>
-                        <ul>
-                            <li><strong>Performance:</strong> Implemented lazy loading and image optimization to reduce load times by 60%</li>
-                            <li><strong>User Experience:</strong> Created intuitive navigation with extensive user testing and iteration</li>
-                            <li><strong>Scalability:</strong> Designed modular architecture to handle growing user base</li>
-                            <li><strong>Cross-browser:</strong> Ensured compatibility across all major browsers and devices</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="full-width-card">
-                    <h3 class="section-title">Future Improvements</h3>
-                    <div class="content-grid" style="margin-top: 2rem;">
-                        <div>
-                            <h4 style="color: #4a7c59; margin-bottom: 1rem;">Planned Features</h4>
-                            <ul style="color: #5a8b6b;">
-                                <li>AI-powered content recommendations</li>
-                                <li>Advanced collaboration tools</li>
-                                <li>Mobile app development</li>
-                                <li>Integration with popular design tools</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 style="color: #4a7c59; margin-bottom: 1rem;">Technical Enhancements</h4>
-                            <ul style="color: #5a8b6b;">
-                                <li>Migration to Next.js for better SEO</li>
-                                <li>Implementation of GraphQL API</li>
-                                <li>Enhanced accessibility features</li>
-                                <li>Progressive Web App capabilities</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="feature-item">
+              <h4>Not Included</h4>
+              <ul>
+                <li>No error visualization (limited to haptic feedback on incorrect positioning)</li>
+                <li>No real-time performance scoring — users must match position to proceed</li>
+                <li>No fluid animation — step-by-step guide only, no continuous ghost motion</li>
+              </ul>
             </div>
-        </section>
-    </main>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
     <script>
         // Smooth scrolling and animations
