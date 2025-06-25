@@ -208,36 +208,47 @@
             margin-bottom: 3rem;
         }
 
+        .features-container {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+
+        /* Features grid takes up about 2/3 of the space */
         .features-grid {
+            flex: 2;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1.5rem;
-            margin-top: 2rem;
         }
 
-        .feature-item {
-            background: rgba(107, 165, 119, 0.1);
-            padding: 1.5rem;
-            border-radius: 15px;
-            border: 1px solid rgba(107, 165, 119, 0.2);
-        }
-
-        .feature-item h4 {
-            color: #4a7c59;
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-
-        .feature-item p {
-            color: #5a8b6b;
-            font-size: 0.9rem;
+        /* Demo section takes up about 1/3 of the space */
+        .features-demo {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-width: 250px;
         }
 
         .features-demo img {
+            max-width: 100%;
+            height: auto;
             border-radius: 8px;
-            justify-content: right;
-            flex-wrap: wrap;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+        .features-container {
+            flex-direction: column;
+        }
+    
+        .features-demo {
+            order: -1; /* Put the GIF above the features on mobile */
+            margin-bottom: 1.5rem;
+        }
+
 
         .project-links {
             display: flex;
@@ -433,34 +444,36 @@
 
                 <div class="full-width-card">
                     <h3 class="section-title">Key Features</h3>
-                    <div class="features-grid">
-                        <div class="feature-item">
-                            <h4>Step-by-Step Guidance</h4>
-                            <p>Precise ghost hand positioning system that guides users through structured training sequences one step at a time</p>
+                    <div class="features-container">
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <h4>Step-by-Step Guidance</h4>
+                                <p>Precise ghost hand positioning system that guides users through structured training sequences one step at a time</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>Interactive Trigger System</h4>
+                                <p>Game objects with interactable triggers that detect when users correctly match ghost hand positions</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>Ghost Handler Scripts</h4>
+                                <p>Custom scripts that manage step progression and integrate with dialogue menu systems for seamless user experience</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>Configurable Timing</h4>
+                                <p>Required time settings for each step's collider detection, ensuring users maintain proper positioning before advancing</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>Haptic Feedback System</h4>
+                                <p>Customizable haptic amplitude and duration settings for controller feedback when steps are completed correctly</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>AI-Generated Audio Cues</h4>
+                                <p>Integrated audio feedback system with AI-generated instructions to supplement visual ghost hand guidance</p>
+                            </div>
                         </div>
-                        <div class="feature-item">
-                            <h4>Interactive Trigger System</h4>
-                            <p>Game objects with interactable triggers that detect when users correctly match ghost hand positions</p>
+                        <div class="features-demo">
+                            <img src="assets/images/ghost-hands-demo.gif" alt="Ghost Hands VR Demo">
                         </div>
-                        <div class="feature-item">
-                            <h4>Ghost Handler Scripts</h4>
-                            <p>Custom scripts that manage step progression and integrate with dialogue menu systems for seamless user experience</p>
-                        </div>
-                        <div class="feature-item">
-                            <h4>Configurable Timing</h4>
-                            <p>Required time settings for each step's collider detection, ensuring users maintain proper positioning before advancing</p>
-                        </div>
-                        <div class="feature-item">
-                            <h4>Haptic Feedback System</h4>
-                            <p>Customizable haptic amplitude and duration settings for controller feedback when steps are completed correctly</p>
-                        </div>
-                        <div class="feature-item">
-                            <h4>AI-Generated Audio Cues</h4>
-                            <p>Integrated audio feedback system with AI-generated instructions to supplement visual ghost hand guidance</p>
-                        </div>
-                    </div>
-                    <div class="features-demo">
-                         <img src="assets/images/ghost-hands-demo.gif" alt="Ghost Hands VR Demo">
                     </div>
                 </div>
 
