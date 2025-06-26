@@ -239,6 +239,13 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
+        .main-video {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
         /* Added the missing feature-item styles from Project Two */
         .feature-item {
             background: rgba(107, 165, 119, 0.1);
@@ -431,7 +438,9 @@
             <div class="container">
                 <h1 class="project-title">Ghost Hands VR System</h1>
                 <p class="project-subtitle">An innovative Unity-based VR training system that guides precise hand movements through ghosted visual feedback for medical education</p>
-                <source src="assets/images/ghost-hands-demo.mp4" alt="Ghost Hands Demo" type="video/mp4">
+                <video class="main-video">
+                    <source src="assets/images/ghost-hands-demo.mp4" alt="Ghost Hands Demo" type="video/mp4">
+                </video>
                 <!-- Project Screenshots -->
                 <div class="project-images">
                     <div class="screenshot-grid">
